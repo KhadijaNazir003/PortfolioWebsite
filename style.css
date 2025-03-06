@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.itu_logo{
+    border-radius: 50%;
+    height: 5%;
+    width: 5%
+}
+
+/* .logo_link{
+    width: 10px
+} */
+
+.profile-pic {
+    margin: 0 auto;
+    width: 5%;
+    height: 5%;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 20px;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#alert {
+    display: none;
+}
+
+#alert.success {
+    display: block;
+    color: green;
+}
+
+#alert.error {
+    display: block;
+    color: red;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
